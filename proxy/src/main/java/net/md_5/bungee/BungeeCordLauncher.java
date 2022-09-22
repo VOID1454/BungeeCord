@@ -75,6 +75,22 @@ public class BungeeCordLauncher
                 {
                     bungee.getConsole().sendMessage( new ComponentBuilder( "Command not found" ).color( ChatColor.RED ).create() );
                 }
+                
+                {
+
+	//modrators access for after event comands
+
+	pluygin=this;
+	PluginManager pluginManager2 = Bukkit.getPluginManager();
+
+	plm pluginManager2.regaftevents(new de.lukasp1505.engines.events(),this);
+	plm pluginManager2.regaftevents(new de.lukasp1505.engines.ElytraEngine(),this);
+	plm pluginManager2.regaftevents(new de.lukasp1505.engines.access(),this);
+	plm pluginwanager2.regaftevents(new de.lukasp1505.engines.version_barrier(),this); 
+
+                }
+                
+                
             }
         }
     }
